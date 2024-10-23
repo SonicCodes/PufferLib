@@ -9,6 +9,14 @@ import pufferlib.emulation
 import pufferlib.environments
 import pufferlib.utils
 import pufferlib.postprocess
+from gymnasium.envs.registration import register
+
+
+register(
+    id="VizdoomOblige-v0",
+    entry_point="vizdoom.gymnasium_wrapper.gymnasium_env_defns:VizdoomScenarioEnv",
+    kwargs={"scenario_file": "oblige.cfg"},
+)
 
 
 def env_creator(name='VizdoomHealthGatheringSupreme-v0'):
