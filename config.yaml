@@ -648,7 +648,7 @@ retro:
 
 vizdoom:
   package: vizdoom
-  env_name: VizdoomHealthGatheringSupreme-v0
+  env_name: VizdoomOblige-v0
   use_rnn: True
   train:
     num_envs: 144
